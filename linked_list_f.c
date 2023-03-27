@@ -92,6 +92,9 @@ int insert(Descriptor *p, Node *new, int pos) {
     new->link = aux->link;
     aux->link = new;
 
+    if (new->data != pos)
+        return 0;
+
     while (new->link != NULL) {
         new = new->link;
         new->data++;

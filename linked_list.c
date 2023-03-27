@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
                     printf("Operation failed!\n");
                 break;
             case 5:
-                if (insert(desc, new_node(333), 3))
+                if (insert(desc, new_node(3), 3))
                     printf("Node inserted!\n");
                 else
                     printf("Operatioin failed!\n");
